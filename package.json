@@ -1,0 +1,15 @@
+{
+  "name": "reviews-service",
+  "version": "1.0.0",
+  "description": "a backend service for an existing frontend app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js"
+  },
+  "author": "Anna Makagonova",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "pg": "^8.3.0"
+  }
+}
