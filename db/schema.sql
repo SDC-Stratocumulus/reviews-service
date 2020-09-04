@@ -24,8 +24,8 @@ CREATE TABLE IF NOT EXISTS characteristics (
 
 CREATE TABLE IF NOT EXISTS characteristics_reviews (
   id SERIAL PRIMARY KEY,
-  review_id int,
   characteristics_id int,
+  review_id int,
   value int);
 
 /*  Execute this file from the command line by typing:
