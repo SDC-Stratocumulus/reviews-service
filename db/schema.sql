@@ -1,3 +1,7 @@
+/*  Execute this file from the command line by typing:
+   psql -d reviews -f schema.sql
+ *  to create the database and the tables.*/
+
 CREATE TABLE IF NOT EXISTS reviews (
   id SERIAL PRIMARY KEY,
   product_id int,
@@ -27,7 +31,3 @@ CREATE TABLE IF NOT EXISTS characteristics_reviews (
   characteristics_id int,
   review_id int,
   value int);
-
-/*  Execute this file from the command line by typing:
-   psql -d reviews -f schema.sql
- *  to create the database and the tables.*/
