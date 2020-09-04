@@ -7,11 +7,7 @@ const agent = supertest.agent(app);
 
 describe("This will test status codes", () => {
   it("should return 200", function (done) {
-    agent.get("/").expect(200, done);
-  });
-
-  it("should return 200", function (done) {
-    agent.get("/reviews/1/list").expect(200, done);
+    agent.get("/reviews/2/list").expect(200, done);
   });
 
   it("should return 204", function (done) {
