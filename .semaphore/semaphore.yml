@@ -4,7 +4,6 @@ agent:
   machine:
     type: e1-standard-2
     os_image: ubuntu1804
-
 blocks:
   - name: Test
     task:
@@ -17,4 +16,3 @@ blocks:
             - npm install
             - cache store
             - npm run build --if-present
-            - npm test
