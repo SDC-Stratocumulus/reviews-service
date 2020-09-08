@@ -1,0 +1,9 @@
+config:
+  target: "http://localhost:8000"
+  phases:
+    - duration: 10
+      arrivalRate: 500
+scenarios:
+  - flow:
+      - get:
+          url: "/reviews/1/list"
